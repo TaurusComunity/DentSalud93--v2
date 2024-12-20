@@ -1,140 +1,71 @@
-<section class="h-[100vh] relative" id="servicios">
-    <!-- Encabezado de ubicación -->
-    <div class="text-negro flex justify-center items-center gap-2 mt-[20px]">
-        <span class="material-symbols-rounded">fact_check</span>
-        <p>
-            <a
-                href="https://maps.google.com/maps?ll=4.591786,-74.097769&z=15&t=m&hl=es-419&gl=CO&mapclient=embed&cid=15560015309859230341"
-                target="_blank" aria-label="Ubicación de DentSalud93 - Los mejores servicios de la ciudad">
-                Los mejores servicios de la ciudad
-            </a>
-        </p>
+<section class="py-12 mx-4 px-5" id="servicios">
+    <div class="container mx-auto px-4 text-center ">
+      <p class="text-3xl font-bold text-negro mb-8">
+        Ofrecemos diferentes tratamientos para tu necesidad.
+    </p>
+    <span class="text-lg font-light text-negro mb-8">Todo lo que tu sonrisa pide, en DentSalud93 lo tenemos. Conoce las diferentes categorías que tenemos para ti.</span>
+</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
+        <!-- Servicio 1 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">health_and_safety</span>
+            <h3 class="ml-4 text-2xl font-semibold">Ortodoncia profesional</h3>
+          </div>
+          <p class="text-gris mb-4">La ortodoncia mejora la alineación de los dientes y corrige problemas de mordida.¡transforma tu sonrisa con un especialista!</p>
+          <a href="/ortodoncia" class="text-azul font-bold hover:underline" aria-label="Ortodoncia - Descubre cómo transformar tu sonrisa">Ver más</a>
+        </div>
+  
+        <!-- Servicio 2 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">favorite</span>
+            <h3 class="ml-4 text-2xl font-semibold">Implantes dentales</h3>
+          </div>
+          <p class="text-gris mb-4">Los implantes dentales son raíces artificiales que reemplazan dientes perdidos ¡Vuelve a sonreír con seguridad!</p>
+          <a href="/periodoncia" class="text-azul font-bold hover:underline" aria-label="Periodoncia - Mantén tus encías saludables">Ver más</a>
+        </div>
+  
+        <!-- Servicio 3 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">dentistry</span>
+            <h3 class="ml-4 text-2xl font-semibold">Blanqueamiento dental</h3>
+          </div>
+          <p class="text-gris mb-4">Nuestro tratamiento estético excelente para eliminar imperfecciones de tus dientes. ¡Haz brillar tu sonrisa!</p>
+          <a href="/blanqueamiento" class="text-azul font-bold hover:underline" aria-label="Blanqueamiento - Descubre cómo tener una sonrisa más blanca">Ver más</a>
+        </div>
+  
+        <!-- Servicio 4 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">construction</span>
+            <h3 class="ml-4 text-2xl font-semibold">Coronas dentales</h3>
+          </div>
+          <p class="text-gris mb-4">Son fundas que cubren dientes dañados o debilitados, restaurando su forma, función y estética. ¡Protege y renueva tu sonrisa!</p>
+          <a href="/implantes" class="text-azul font-bold hover:underline" aria-label="Implantes - Soluciones para restaurar tu sonrisa">Ver más</a>
+        </div>
+  
+        <!-- Servicio 5 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">brush</span>
+            <h3 class="ml-4 text-2xl font-semibold">Odontopediatria</h3>
+          </div>
+          <p class="text-gris mb-4">El cuidado dental de niños, asegurando una sonrisa sana desde pequeños. ¡La salud dental comienza en la infancia!</p>
+          <a href="/profilaxis" class="text-azul font-bold hover:underline" aria-label="Profilaxis - Limpiezas profesionales para tu salud bucal">Ver más</a>
+        </div>
+  
+        <!-- Servicio 6 -->
+        <div class="bg-blanco p-6 rounded-lg shadow-md hover:bg-negro hover:text-blanco transition duration-300">
+          <div class="flex items-center mb-4">
+            <span class="material-symbols-rounded text-4xl text-azul">emoji_nature</span>
+            <h3 class="ml-4 text-2xl font-semibold">Cirugias orales</h3>
+          </div>
+          <p class="text-gris mb-4">Nos encargamos de tratar afecciones, lesiones o malformaciones de la boca, dientes, mandíbula y rostro.</p>
+          <a href="/estetica-dental" class="text-azul font-bold hover:underline" aria-label="Estética Dental - Tratamientos personalizados para tu sonrisa">Ver más</a>
+        </div>
+      </div>
     </div>
-
-    <!-- Título y descripción -->
-    <div class="text-negro text-center">
-        <p class="text-[35px] font-semibold">
-            Ofrecemos diferentes tratamientos para tu necesidad.
-        </p>
-        <span>Todo lo que tu sonrisa pide, en DentSalud93 lo tenemos. Conoce las diferentes categorías que tenemos para ti.</span>
-    </div>
-
-    <!-- Listado de servicios -->
-    <div class="flex justify-center items-center gap-6 px-5 mt-[25px] flex-wrap">
-        
-        <!-- Ortodoncia -->
-        <a href="1" class="" aria-label="Ortodoncia profesional - Tratamiento para alinear los dientes">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Ortodoncia profesional</h2>
-                    <p class="text-[13px]">La ortodoncia mejora la alineación de los dientes y corrige problemas de mordida. Usando alineadores o retenedores, ¡transforma tu sonrisa con un especialista!</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Implantes dentales -->
-        <a href="2" class="" aria-label="Implantes dentales - Solución fija para dientes perdidos">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Implantes dentales</h2>
-                    <p class="text-[13px]">Los implantes dentales son raíces artificiales que reemplazan dientes perdidos, ofreciendo una solución fija, estética y funcional. ¡Vuelve a sonreír con seguridad!</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Blanqueamiento dental -->
-        <a href="3" class="" aria-label="Blanqueamiento dental - Tratamiento estético para aclarar dientes">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Blanqueamiento dental</h2>
-                    <p class="text-[13px]">El blanqueamiento dental es un tratamiento estético que elimina manchas y aclara el color de tus dientes, devolviéndoles su brillo natural. ¡Haz brillar tu sonrisa!</p>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-    <!-- Segunda fila de servicios -->
-    <div class="flex justify-center items-center gap-6 px-5 mt-[25px]">
-        
-        <!-- Coronas dentales -->
-        <a href="4" class="" aria-label="Coronas dentales - Fundas para dientes dañados">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Coronas dentales</h2>
-                    <p class="text-[13px]">Las coronas dentales son fundas que cubren dientes dañados o debilitados, restaurando su forma, función y estética. ¡Protege y renueva tu sonrisa!</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Odontopediatría -->
-        <a href="5" class="" aria-label="Odontopediatría - Cuidado dental para niños">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Odontopediatría</h2>
-                    <p class="text-[13px]">La odontopediatría se enfoca en el cuidado dental de niños, asegurando una sonrisa sana desde pequeños. ¡La salud dental comienza en la infancia!</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Endodoncias -->
-        <a href="6" class="" aria-label="Endodoncias - Tratamiento de conductos para salvar dientes">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Endodoncias</h2>
-                    <p class="text-[13px]">La endodoncia es el tratamiento de conductos que se realiza para salvar dientes afectados por infecciones o daño en el nervio. ¡Recupera tu sonrisa y salud dental!</p>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-    <!-- Tercera fila de servicios -->
-    <div class="flex justify-center items-center gap-6 px-5 mt-[25px]">
-        
-        <!-- Cirugía oral y maxilofacial -->
-        <a href="7" class="" aria-label="Cirugía oral y maxilofacial - Tratamientos quirúrgicos para la boca y rostro">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Cirugía oral y maxilofacial</h2>
-                    <p class="text-[13px]">La cirugía oral y maxilofacial se encarga de tratar afecciones, lesiones o malformaciones de la boca, dientes, mandíbula y rostro. ¡Recupera tu bienestar con un tratamiento especializado!</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Prótesis dentales -->
-        <a href="8" class="" aria-label="Prótesis dentales - Solución para dientes perdidos o dañados">
-            <div class="box hover:bg-negro hover:text-blanco transition-all ease-in-out duration-200 bg-gray-200 max-w-[390px] flex gap-5 p-[20px] rounded-lg shadow-gray-400 shadow-sm">
-                <div>
-                    <span class="material-symbols-rounded">family_star</span>
-                </div>
-                <div>
-                    <h2 class="font-medium text-[18px]">Prótesis dentales</h2>
-                    <p class="text-[13px]">Las prótesis dentales son dispositivos que reemplazan dientes perdidos, mejorando la funcionalidad y estética de tu sonrisa. Pueden ser fijas o removibles. ¡Recupera tu sonrisa con comodidad y confianza!</p>
-                </div>
-            </div>
-        </a>    
-
-    </div>
-</section>
+  </section>
+  

@@ -1,18 +1,31 @@
-<header class="min-h-[100vh] bg-gradient-to-t from-primario to-negro px-5 py-5 relative" id="inicio">
-  <nav class="p-3 backdrop-blur rounded-xl flex justify-between items-center">
+<header class="min-h-screen w-full bg-gradient-to-t from-primario to-negro px-5 py-5" id="inicio">
+  <!-- Navegación -->
+  <nav class="p-3 backdrop-blur w-full flex flex-wrap items-center justify-between rounded-xl">
     <!-- Logo y título -->
-    <a href="/" rel="noopener noreferrer">
-      <div class="flex items-center gap-2 text-blanco">
-        <img src="/img/logo.webp" alt="logo header" width="40px" height="40px" />
-        <div>
-          <h1 class="text-[20px] font-medium">DentSalud 93</h1>
-          <p class="text-[12px] font-light -mt-2">Mas que una sonrisa</p>
-        </div>
+    <a href="/" rel="noopener noreferrer" class="flex items-center gap-2 text-blanco">
+      <img src="/img/logo.webp" alt="logo header" width="40px" height="40px" />
+      <div>
+        <h1 class="text-[20px] font-medium">DentSalud 93</h1>
+        <p class="text-[12px] font-light -mt-1">Más que una sonrisa</p>
       </div>
     </a>
 
+    <button
+        id="menu-toggle"
+        class="lg:hidden text-blanco focus:outline-none focus:ring-2 focus:ring-blanco"
+        aria-label="Toggle menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
     <!-- Menú -->
-    <ul class="text-blanco flex gap-5 md:flex">
+    <ul
+      id="menu"
+      class="hidden w-full mt-4 lg:mt-0 lg:w-auto lg:flex lg:flex-row flex-col lg:gap-5 text-blanco bg-negro lg:bg-transparent lg:relative"
+    >
       <li class="hover:scale-110 transition-all duration-200 ease-in-out p-2 hover:bg-negro rounded-lg hover:border hover:border-blanco active:scale-95">
         <a href="#inicio" aria-label="inicio">Inicio</a>
       </li>
@@ -23,12 +36,12 @@
         <a href="#contacto" aria-label="contactos">Contacto</a>
       </li>
       <li class="hover:scale-110 transition-all duration-200 ease-in-out p-2 hover:bg-negro rounded-lg hover:border hover:border-blanco active:scale-95">
-        <a href="#canales" aria-label="canales de atencion">Canales de atencion</a>
+        <a href="#canales" aria-label="canales de atencion">Canales de atención</a>
       </li>
     </ul>
 
-    <!-- Botón de contacto -->
-    <div>
+     <!-- Botón de contacto -->
+     <div class="mt-2">
       <div class="relative group">
         <a href="https://wa.link/utb6ha" target="_blank" aria-label="contacto">
           <button class="relative inline-block p-px font-semibold leading-6 text-white shadow-2xl cursor-pointer rounded-lg shadow-primario transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-negro">
@@ -48,7 +61,7 @@
   </nav>
 
   <!-- Contenido principal -->
-  <div class="flex flex-col justify-center items-center gap-5 h-[80vh]">
+  <div class="mt-10 lg:mt-0 flex flex-col justify-center items-center gap-5 h-[80vh] text-center">
     <div class="text-blanco flex justify-center items-center gap-2">
       <span class="material-symbols-rounded">pin_drop</span>
       <p>
@@ -56,50 +69,26 @@
       </p>
     </div>
 
-    <div class="text-blanco text-center">
-      <p class="text-[35px] font-semibold">
+    <div class="text-blanco">
+      <p class="text-2xl lg:text-4xl font-semibold">
         Es momento de darle una nueva personalidad a tu rostro, en DentSalud no solo transformamos sonrisas, también vidas.
       </p>
-      <span>Contactanos y obtén la mejor asesoría de Bogotá.</span>
+      <span>Contáctanos y obtén la mejor asesoría de Bogotá.</span>
     </div>
 
     <!-- Estadísticas -->
-    <div class="flex justify-center items-center gap-10 mt-4 flex-wrap">
-      <div class="outer">
-        <div class="dot"></div>
-        <div class="card">
-          <div class="ray"></div>
-          <div class="text">+1000</div>
-          <div>Clientes</div>
-          <div class="line topl"></div>
-          <div class="line leftl"></div>
-          <div class="line bottoml"></div>
-          <div class="line rightl"></div>
-        </div>
+    <div class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-10 mt-4">
+      <div class="text-center bg-[radial-gradient(circle_280px_at_0%_0%,_#444444,_#0c0d0d)] p-5 w-[180px] lg:w-[280px] h-[150px] rounded-lg flex flex-col justify-center items-center">
+        <p class="lg:text-[50px] text-[40px] font-bold text-blanco">+1000</p>
+        <span class="text-blanco">Clientes</span>
       </div>
-      <div class="outer">
-        <div class="dot"></div>
-        <div class="card">
-          <div class="ray"></div>
-          <div class="text">+10</div>
-          <div>Tratamientos diferentes</div>
-          <div class="line topl"></div>
-          <div class="line leftl"></div>
-          <div class="line bottoml"></div>
-          <div class="line rightl"></div>
-        </div>
+      <div class="text-center bg-[radial-gradient(circle_280px_at_0%_0%,_#444444,_#0c0d0d)] p-5 w-[180px] lg:w-[280px] h-[150px] rounded-lg flex flex-col justify-center items-center">
+        <p class="lg:text-[50px] text-[40px] font-bold text-blanco">+10</p>
+        <span class="text-blanco">Tratamientos diferentes</span>
       </div>
-      <div class="outer">
-        <div class="dot"></div>
-        <div class="card">
-          <div class="ray"></div>
-          <div class="text">+2</div>
-          <div>Metodos de financiamiento</div>
-          <div class="line topl"></div>
-          <div class="line leftl"></div>
-          <div class="line bottoml"></div>
-          <div class="line rightl"></div>
-        </div>
+      <div class="text-center bg-[radial-gradient(circle_280px_at_0%_0%,_#444444,_#0c0d0d)] p-5 w-[180px] lg:w-[280px] h-[150px] rounded-lg flex flex-col justify-center items-center">
+        <p class="lg:text-[50px] text-[40px] font-bold text-blanco">+2</p>
+        <span class="text-blanco">Métodos de financiamiento</span>
       </div>
     </div>
   </div>

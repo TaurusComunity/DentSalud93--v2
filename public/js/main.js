@@ -13,3 +13,9 @@ const carousel = document.getElementById('carousel');
     setInterval(() => {
         moveCarousel(1);
     }, 2000);
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+      });
+      
